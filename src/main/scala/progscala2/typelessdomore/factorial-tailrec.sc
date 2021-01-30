@@ -11,4 +11,4 @@ def factorial(i: Int): Long = {
   fact(i, 1)
 }
 
-(0 to 5) foreach ( i => println(factorial(i)) )
+(0 to 15) foreach ( i => println(factorial(i)) )

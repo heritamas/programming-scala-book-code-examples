@@ -2,7 +2,8 @@
 
 def makeList(strings: String*) = {
   if (strings.length == 0)
-    Nil  // #1
+    //Nil  // #1
+    List.empty[String]
   else
     strings.toList
 }
