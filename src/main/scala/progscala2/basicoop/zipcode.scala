@@ -1,12 +1,14 @@
 // src/main/scala/progscala2/basicoop/Zipcode.scala
 package progscala2.basicoop
 
+import scala.util.matching.Regex
+
 case class ZipCode(zip: String, extension: Option[String] = None) {
   require(validUSPS(zip, extension),                                     // <1>
     s"Invalid Zip+4 specified: $toString")
 
-  protected val zipRE = """(\d){5}""".r
-  protected val extRE = """(\d){4}""".r
+  protected val zipRE: Regex = """(\d){5}""".r
+  protected val extRE: Regex = """(\d){4}""".r
 
   /**
    * Is it a real US Postal Service zip code?

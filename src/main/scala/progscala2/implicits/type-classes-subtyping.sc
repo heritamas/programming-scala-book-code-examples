@@ -1,6 +1,6 @@
 // src/main/scala/progscala2/implicits/type-classes-subtyping.sc
 
-trait Stringizer[+T] {
+trait Stringizer[T] {
   def stringize: String
 }
 

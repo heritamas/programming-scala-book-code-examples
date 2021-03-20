@@ -27,5 +27,6 @@ object CalculatePayroll2 {
     println(s"For ${e.name}, the gross vs. net pay every 2 weeks is:")
     println(
       f"  $$${twoWeekGross}%.2f vs. $$${twoWeekNet}%.2f or ${percent}%.1f%%")
+
   }
 }

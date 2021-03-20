@@ -3,12 +3,14 @@ package progscala2.basicoop
 
 case class Address(street: String, city: String, state: String, zip: String) {
 
+  println("Constructing address " + this)
+
+
   def this(zip: String) =                                            // <1>
     this("[unknown]", Address.zipToCity(zip), Address.zipToState(zip), zip)
 }
 
 object Address {
-
   // Fake implementation
   def zipToCity(zip: String)  = s"Anytown-$zip"                      // <2>
   def zipToState(zip: String) = s"CA-$zip"

@@ -26,3 +26,5 @@ ListOfA = List(new B(), new B())
 println(ListOfA.getClass.getName)
 
 
+def double(i: Int) { println("I'm the side effect: " + 2 * i) }
+println(double(4))

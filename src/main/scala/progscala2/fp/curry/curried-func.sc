@@ -18,3 +18,7 @@ val cat3Uncurried = Function.uncurried(cat3Curried)
 
 cat3Uncurried("hello", "world")
 // helloworld
+
+
+cat3 _ eq cat3 _
+cat3Curried eq cat3Curried

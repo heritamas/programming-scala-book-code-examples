@@ -15,7 +15,7 @@ case class ComplicatedSalesTaxData(
 object ComplicatedSalesTax {
   private def extraTaxRateForStore(id: Int): Float = {
     // From id, determine location, then extra taxes...
-    0.0F
+    0.01F
   }
 
   implicit def rate(implicit cstd: ComplicatedSalesTaxData): Float = 

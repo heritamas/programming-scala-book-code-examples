@@ -21,3 +21,6 @@ new Person("Buck Trends3", 20, a2)
 
 new Person("Buck Trends4", 20)
 // Result: Person(Buck Trends4,Some(20),None)
+
+println(a1)
+println(a2)
